@@ -1,0 +1,26 @@
+body {
+  background-color: #0a04c6;
+}
+
+.main {
+  background-color: #00bdff;
+  height: 100vh;
+}
+
+.canvas {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+}
+
+.letter-btn {
+  cursor: pointer;
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+  margin: 3px;
+  border: none;
+  border-radius: 2px;
+  background-color: yellowgreen;
+  color: white;
+}
