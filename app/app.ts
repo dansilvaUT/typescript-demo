@@ -1,6 +1,9 @@
-import { SetUp } from "./setUp";
+import { Game } from "./game";
 
-let setUp = new SetUp();
+let game = new Game();
 
-setUp.displayLetters(setUp.letters);
-console.log(setUp.getWord(setUp.words));
+console.log(game.word);
+
+game.setGameWord();
+console.log(game.word);
+game.applyGuess("d");

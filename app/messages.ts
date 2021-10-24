@@ -1,12 +1,16 @@
-const welcome =
-  "Welcome to hangman!\n Hit 'Start Game' guess the letter before your guesses run out, good luck!";
+export const messages = [
+  {
+    welcome:
+      "Welcome to hangman!\n Hit 'Start Game' guess the letter before your guesses run out, good luck!",
+  },
 
-const goodGuess = "Good guess!";
+  { goodGuess: "Good guess!" },
 
-const badGuess = "Yikes, try a different letter";
+  { badGuess: "Yikes, try a different letter" },
 
-const repeatLetter = "You already guessed that letter";
+  { repeatLetter: "You already guessed that letter" },
 
-const lose = "Sorry, you lost";
+  { lose: "Sorry, you lost" },
 
-const win = "Good game, you won!";
+  { win: "Good game, you won!" },
+];

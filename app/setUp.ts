@@ -48,6 +48,11 @@ class SetUp {
   getWord = (arr: Array<string>): string => {
     return sample(arr);
   };
+
+  displayDashes = (word: string): Array<string> => {
+    //TODO: finish dashes
+    return word.split("").map((w) => "-");
+  };
 }
 
 export { SetUp };
