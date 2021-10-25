@@ -35,6 +35,10 @@ class SetUp {
     "frazzled",
   ];
 
+  /**
+   *
+   * @param arr
+   */
   displayLetters = (arr: Array<string>): void => {
     let parent = document.getElementById("letters");
     arr.map((letter) => {
@@ -45,13 +49,22 @@ class SetUp {
     });
   };
 
+  /**
+   *
+   * @param arr
+   * @returns A string, which is the word the user will try to guess.
+   */
   getWord = (arr: Array<string>): string => {
-    return sample(arr);
+    return sample(arr)?.toLowerCase()!;
   };
 
-  displayDashes = (word: string): Array<string> => {
-    //TODO: finish dashes
-    return word.split("").map((w) => "-");
+  /**
+   *
+   * @param word
+   * @returns A string that is comprised of dashes.
+   */
+  convertToDashes = (word: Array<string>): string => {
+    return word.map((w) => "-").join("");
   };
 }
 
