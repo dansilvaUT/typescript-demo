@@ -13,19 +13,13 @@ class Game {
   }
 
   /**
-   * Sets the local word instance variable to an array of letters.
+   * Get the word, covert the word to dashes, show letter buttons
    */
-  setGameWords = (): void => {
+  setUpGame = (): void => {
     this.word = this.startGame.getWord(this.startGame.words).split("");
-  };
-
-  /**
-   * Renders dashes based on the number of letters in instance word variable
-   */
-  displayDashes = (): void => {
     this.dashes = this.startGame.convertToDashes(this.word);
+    this.startGame.displayLetters(this.startGame.letters);
   };
-
   /**
    *
    * @param letter

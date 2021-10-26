@@ -1,14 +1,5 @@
-import { Game } from "./game";
+import { Play } from "./play";
 
-let game = new Game();
+const game = new Play();
 
-console.log(game.word);
-
-game.setGameWords();
-console.log(game.word);
-game.displayDashes();
-console.log(game.applyGuess("d"));
-console.log(game.applyGuess("f"));
-console.log(game.applyGuess("o"));
-console.log(game.applyGuess("s"));
-console.log(game.dashes);
+game.startGame();

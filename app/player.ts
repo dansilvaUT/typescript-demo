@@ -5,7 +5,7 @@ class Player {
    *
    * @param name
    */
-  constructor(name: string) {
+  constructor(name: string = "") {
     this.name = name;
   }
 

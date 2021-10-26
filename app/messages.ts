@@ -1,7 +1,7 @@
 export const messages = [
   {
     welcome:
-      "Welcome to hangman!\n Hit 'Start Game' guess the letter before your guesses run out, good luck!",
+      "Welcome to hangman!\n Guess the letter before your guesses run out, good luck!",
   },
 
   { goodGuess: "Good guess!" },
