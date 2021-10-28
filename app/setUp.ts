@@ -5,8 +5,10 @@ class SetUp {
     "a",
     "b",
     "c",
+    "d",
     "e",
     "f",
+    "g",
     "h",
     "i",
     "j",
@@ -44,9 +46,20 @@ class SetUp {
     arr.map((letter) => {
       let button = document.createElement("button");
       button.className = "letter-btn";
+      button.setAttribute("id", letter);
       button.textContent = letter;
+      // button.addEventListener("click", this.getIDAsString);
       return parent?.appendChild(button);
     });
+  };
+
+  /**
+   *
+   * @param event
+   * @returns The id of the letter button
+   */
+  getIDAsString = (event: Event): string => {
+    return (event.target as HTMLElement).id;
   };
 
   /**

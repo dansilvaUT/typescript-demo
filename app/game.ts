@@ -3,13 +3,14 @@ import { messages } from "./messages";
 class Game {
   startGame: SetUp;
   word: Array<string>;
-  guessedLetters: Array<string>;
+  guessedLetters: string[];
   dashes: string;
   /**
    * Constructor initializes set up class
    */
   constructor() {
     this.startGame = new SetUp();
+    this.guessedLetters = [];
   }
 
   /**
@@ -26,6 +27,7 @@ class Game {
    * @returns a boolean whether letter is in word.
    */
   guessWord = (letter: string): boolean => {
+    this.guessedLetters.push(letter);
     return this.word.includes(letter);
   };
 

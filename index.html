@@ -16,17 +16,23 @@
     <div class="container main">
       <h1>Hang Man</h1>
       <div class="container">
-        <button id="start-btn">Start Game</button>
-        <input
-          type="text"
-          id="playerInput"
-          placeholder="Enter Your Name"
-          value=""
-        />
-        <p></p>
-        <div class="container-md canvas"></div>
-        <div class="container" id="hiddenLetters"></div>
-        <div class="container-md canvas" id="letters"></div>
+        <div class="container controls">
+          <button id="start-btn">Start Game</button>
+          <input
+            type="text"
+            id="playerInput"
+            placeholder="Enter Your Name"
+            value=""
+          />
+        </div>
+
+        <div class="container-md canvas">
+          <p></p>
+          <p id="feedback"></p>
+          <div class="container" id="hiddenLetters"></div>
+        </div>
+
+        <div class="container-md letter-container" id="letters"></div>
       </div>
     </div>
     <!-- add script tags here -->
